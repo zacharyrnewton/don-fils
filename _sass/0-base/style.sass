@@ -1,0 +1,54 @@
+//Typography
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700')
+$font-stack: serif
+$font-regular: 400
+$font-bold: 700
+
+//Colors
+$black: #000000
+$white: #FFFFFF
+$off-white: #FAFAFF
+$cool-white: #EDEDFA
+
+$cool-black: #1D1E3B
+$cool-black-plus-one: #2C2C47
+$cool-black-plus-two: #363652
+
+$denotive-fail: #FF2E2E
+$denotive-warning: #F0B900
+$denotive-success: #2ED3B0
+
+$primary: #0F32C9
+$primary-plus-one: #363EFB
+$primary-minus-one: #1E22AA
+
+
+
+\:root
+  --black: #{$black}
+  --white: #{$white}
+  --off-white: #{$off-white}
+  --cool-white: #{$cool-white}
+
+  --cool-black: #{$cool-black}
+  --cool-black-plus-one: #{$cool-black-plus-one}
+  --cool-black-plus-two: #{$cool-black-plus-two}
+
+  --denotive-fail: #{$denotive-fail}
+  --denotive-warning: #{$denotive-warning}
+  --denotive-success: #{$denotive-success}
+
+  --primary: #{$primary}
+  --primary-plus-one: #{$primary-plus-one}
+  --primary-minus-one: #{$primary-minus-one}
+
+*
+  transition: padding 0.2s ease-out, margin 0.2s ease-out
+
+html
+  background-color: var(--white)
+  font-family: $font-stack
+  font-size: 100%
+  color: var(--cool-black)
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
