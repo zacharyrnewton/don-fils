@@ -1,6 +1,11 @@
 //Typography
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700')
-$font-stack: serif
+@font-face
+  font-family: 'gt_sectra_finebold'
+  src: url('../fonts/gtsectrafine-bold-webfont.woff2') format('woff2'), url('../fonts/gtsectrafine-bold-webfont.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+$font-stack: 'gt_sectra_finebold', serif
 $font-regular: 400
 $font-bold: 700
 
@@ -49,6 +54,6 @@ html
   background-color: var(--white)
   font-family: $font-stack
   font-size: 100%
-  color: var(--cool-black)
+  color: var(--black)
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
