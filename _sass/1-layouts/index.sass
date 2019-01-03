@@ -8,8 +8,34 @@
   align-items: center
   box-sizing: border-box
   h1.hero-copy
+    position: relative
     font-size: 5vw
     margin: auto 6vw
+    color: $black
+    line-height: calc(5vw * 1.25)
+    transition: none
+    z-index: 3
+    span
+      position: relative
+      color: $black
+      cursor: pointer
+      z-index: 2
+      img
+        position: absolute
+        width: 375px
+        height: 375px
+        object-fit: contain
+        display: none
+        z-index: -3
+      &:hover
+        color: #666666
+        img
+          display: block
+    span.name img
+      bottom: 0
+      right: 0
+      transform: translateX(100%)
+
 
 @media screen and (max-width: 800px)
   .hero-wrapper
@@ -17,3 +43,4 @@
     h1.hero-copy
       font-size: 2.5rem
       margin: auto
+      line-height: 3.125rem
