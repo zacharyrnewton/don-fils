@@ -8,6 +8,7 @@
   justify-content: center
   align-items: center
   box-sizing: border-box
+  z-index: 1
   h1.hero-copy
     position: relative
     font-size: calc(5vw - 1px)
@@ -20,49 +21,47 @@
       position: relative
       color: $black
       cursor: pointer
-      z-index: 0
+      z-index: 2
       img
         position: absolute
         top: 0
         left: 0
-        width: 375px
-        height: 375px
+        width: calc(20vw / 1)
+        height: calc(20vw / 1)
         object-fit: contain
         display: none
-        z-index: -3
       &:hover
         color: #666666
         img
           display: block
-
     span.name img
-      top: -150px
+      top: calc(20vw / -2.5)
       right: 0
-      left: 400px
-      z-index: -3
+      left: calc(19.75vw * 1)
+      opacity: 0.99
     span.graphic-design img
-      width: 56px
-      height: 56px
+      width: calc(10vw / 3)
+      height: calc(10vw / 3)
       top: 0
-      right: 0
+      right: calc(10vw / -12)
       bottom: auto
       left: auto
       z-index: 3
     span.photography img
-      width: 91px
-      height: 91px
-      top: auto
-      right: auto
-      bottom: -35px
-      left: 50px
-      z-index: 3
-    span.art-direction img
-      width: 627px
-      height: 470px
-      top: -100px
+      width: calc(10vw / 2)
+      height: calc(10vw / 2)
+      top: calc(10vw / 3)
       right: auto
       bottom: auto
-      left: -200px
+      left: calc(10vw / 2.25)
+      z-index: 3
+    span.art-direction img
+      width: 10vw
+      height: 10vw
+      top: calc(10vw / 6)
+      right: auto
+      bottom: auto
+      left: calc(10vw / 3.5)
       z-index: 3
 
   #email-CTA
@@ -70,7 +69,7 @@
     width: auto
     height: 80px
     bottom: 4vw
-    right: 4vw
+    right: 12vw
     svg
       object-fit: contain
       height: 100%
@@ -83,34 +82,38 @@
       font-size: 2.5rem
       margin: auto
       line-height: 3.125rem
+      span
+        img
+          width: 300px
+          height: 300px
       span.name img
-        top: -150px
+        top: -200px
         right: 0
-        left: 400px
-        z-index: -3
+        left: calc(19.75vw * 1)
+        opacity: 0.99
       span.graphic-design img
-        width: 56px
-        height: 56px
+        width: 32px
+        height: 32px
         top: 0
-        right: 0
+        right: calc(10vw / -12)
         bottom: auto
         left: auto
         z-index: 3
       span.photography img
-        width: 91px
-        height: 91px
-        top: auto
-        right: auto
-        bottom: -35px
-        left: 50px
-        z-index: 3
-      span.art-direction img
-        width: 627px
-        height: 470px
-        top: -100px
+        width: 30px
+        height: 30px
+        top: 25px
         right: auto
         bottom: auto
-        left: -200px
+        left: 32px
+        z-index: 3
+      span.art-direction img
+        width: 60px
+        height: 60px
+        top: 20px
+        right: auto
+        bottom: auto
+        left: 25px
         z-index: 3
     #email-CTA
       position: absolute
